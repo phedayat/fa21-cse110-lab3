@@ -89,9 +89,11 @@
                     </ul>
                     <br>
                     <img src="flow.jpeg" height=300 width=300>
-                    <summary>
-                        <p>Basically just add more boxes and hope no one will try to understand what you've done</p>
-                    </summary>
+                    <details>
+                        <summary>
+                            <p>Basically just add more boxes and hope no one will try to understand what you've done</p>
+                        </summary>
+                    </details>
                 </section>
                 <section>
                     <h3>Meeting Video (HD)(HQ)(GONE WRONG!)</h3>
@@ -101,7 +103,9 @@
                     <span>Just audio:</span><br>
                     <audio src="meeting_audio.m4a" controls>Just audio</audio>
                     <details>
-                        The people featured in this video are not good at making these videos.
+                        <summary>
+                            <p>The people featured in this video are not good at making these videos.</p>
+                        </summary>
                     </details>
                 </section>
             </section>
@@ -117,36 +121,34 @@
         </section>
         <hr>
         <footer>
-            <span>
-                <form>
+            <form>
+                <fieldset>
+                    <input type="checkbox" id="check">
+                    <label for="check">Toggle</label><br>
+                    <br>
                     <fieldset>
-                        <input type="checkbox" name="check">
-                        <label for="check">Toggle</label><br>
-                        <br>
-                        <fieldset>
-                            <input type="radio" name="rad_1">
-                            <label for="rad_1">Option 1</label><br>
-                            <input type="radio" name="rad_2">
-                            <label for="rad_2">Option 2</label><br>
-                            <input type="radio" name="rad_3">
-                            <label for="rad_3">Option 3</label><br>
-                        </fieldset>
-                        <br>
-                        <label for="txt">Enter Your Name</label>
-                        <input type="text" name="txt"><br>
-                        <label for="dte">Date</label>
-                        <input type="date" name="dte"><br>
-                        <label for="choices">Names Available</label>
-                        <select name="choices">
-                            <option>Parsia</option>
-                            <option>Olivia</option>
-                            <option>Ma</option>
-                        </select>
+                        <input type="radio" id="rad_1">
+                        <label for="rad_1">Option 1</label><br>
+                        <input type="radio" id="rad_2">
+                        <label for="rad_2">Option 2</label><br>
+                        <input type="radio" id="rad_3">
+                        <label for="rad_3">Option 3</label><br>
                     </fieldset>
                     <br>
-                    <input type="button" value="Submit">
-                </form>
-            </span>
+                    <label for="txt">Enter Your Name</label>
+                    <input type="text" id="txt"><br>
+                    <label for="dte">Date</label>
+                    <input type="date" id="dte"><br>
+                    <label for="choices">Names Available</label>
+                    <select id="choices">
+                        <option>Parsia</option>
+                        <option>Olivia</option>
+                        <option>Ma</option>
+                    </select>
+                </fieldset>
+                <br>
+                <input type="button" value="Submit">
+            </form>
         </footer>
     </body>
 </html>

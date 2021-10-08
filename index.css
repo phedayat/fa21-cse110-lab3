@@ -1,8 +1,16 @@
+.items {
+    display: grid;
+}
+
 /* CSS for section titles */
 #section_title {
+    margin: 10px;
     color: rgb(80, 120, 220);
     background-color: saddlebrown;
-    text-decoration: silver;
+    text-decoration: wavy;
+    width: max-content;
+    text-align: center;
+    border: solid .2vw black;
 }
 
 /* CSS for videos in the minutes */
@@ -16,35 +24,42 @@
 
 /* CSS for logic flow diagrams */
 .flow {
-    padding: .5vw 4vw 4vw 4vw;
-    border: dashed 1ex deeppink;
+    padding: .45vw .45vw .45vw .45vw;
+    border: dashed .3ex rgb(20, 102, 255);
 }
 
 section {
-    display: grid;
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+
 }
 
 /* CSS for unordered lists */
-ul {
+ul, ol {
     color: #023685;
     padding-top: 1.4em;
     padding-right: 1.4em;
     padding-bottom: 1.4em;
     padding-left: 1.4em;
+    list-style-type: none;
 }
 
 details {
-    color: hsl(1, .5, .5);
+    word-wrap: break-word;
+    color: hsl(303, 100%, 51%);
 }
 
 .box {
-    display: flex;
-    color: forestgreen;
-    fill: red;
-    justify-content: center;
+    text-decoration: wavy;
+    text-align: center;
+    color: red;
+    background-color: red;
     border: dashed 1px black;
+    padding: 2vmin;
 }
 
 .box:hover {
-    fill: none;
+    color: blue;
+    background-color: white;
 }

@@ -3,6 +3,43 @@
     <head>
         <title>Meeting Minutes</title>
         <link rel="stylesheet" href="index.css" type="text/css">
+        <style>
+            .audio_layout {
+                line-height: 150%;
+                color: rgb(30, 168, 210);
+            }
+
+            .video_details {
+                word-wrap: break-word;
+            }
+
+            #raffle_box {
+                background-color: chocolate;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 2ch;
+                border: deeppink 10px double;
+            }
+
+            .raffle {
+                text-align: center;
+                align-items: center;
+                display: flex;
+            }
+
+            .footer_layout {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .form_layout {
+                border: solid 1px black;
+                padding: .5em;
+                margin: 10px;
+            }
+        </style>
     </head>
     <body>
         <header>
@@ -39,9 +76,9 @@
                 </ul>
             </section>
             <hr>
-            <section>
+            <section class="items">
                 <h2>New Business</h2>
-                <section>
+                <section id="section_title">
                     <h3 id="section_title">Brainstorm Ideas</h3>
                     <ul>
                         <li>Toasted bread</li>
@@ -50,19 +87,19 @@
                         <li>Scooter with a rocket engine</li>
                     </ul>
                 </section>
-                <section>
+                <section id="section_title">
                     <h3 id="section_title">Decide <i>Who</i> Buys Lunch</h3>
                     <ul>
                         <li><b>Professor Powell</b></li>
                     </ul>
                 </section>
-                <section>
+                <section id="section_title">
                     <h3 id="section_title">Decide Who's Going to Take Out The Office Trash</h3>
                     <ul>
                         <li>Okay, fine, Parsia will do this one</li>
                     </ul>
                 </section>
-                <section>
+                <section id="section_title">
                     <h3 id="section_title">How Many Tickets Can We Assign In One Day?</h3>
                     <ul>
                         <li>1000</li>
@@ -71,9 +108,9 @@
                 </section>
             </section>
             <hr>
-            <section>
+            <section class="items">
                 <h3>Old Business</h3>
-                <section>
+                <section id="section_title">
                     <h3 id="section_title">New Hires Need Access To Lessonly</h3>
                     <ol>
                         <li>Contact HR to get code</li>
@@ -81,34 +118,40 @@
                         <li>Make sure the correct codes are being sent</li>
                     </ol>
                 </section>
-                <section>
+                <section id="section_title">
                     <h3 id="section_title">Review Notification Logic Flow</h3>
                     <ul>
                         <li>Needs <em>more</em> nodes</li>
                         <li>Needs to be <strong>so much more</strong> confusing</li>
                     </ul>
                     <br>
-                    <img class="flow" src="flow.jpeg" height=300 width=300 alt="Logic Flow">
-                    <details>
-                        <summary>
-                            Real Answer
-                        </summary>
-                        Basically just add more boxes and hope no one will try to understand what you've done.
-                    </details>
+                    <div>
+                        <img class="flow" src="flow.jpeg" height=300 width=300 alt="Logic Flow">
+                        <details>
+                            <summary>
+                                Real Answer
+                            </summary>
+                            Basically just add more boxes and hope no one will try to understand what you've done.
+                        </details>
+                    </div>
                 </section>
-                <section>
+                <section id="section_title">
                     <h3 id="section_title">Meeting Video (HD)(HQ)(GONE WRONG!)</h3>
-                    <video class="video" src="meeting.mp4" height="300" width="500" controls></video>
+                    <div class="video_layout">
+                        <video class="video" src="meeting.mp4" height="300" width="500" controls></video>
+                        <details class="video_details">
+                            <summary>
+                                Disclaimer
+                            </summary>
+                            The people featured in this video are not good at making these videos.
+                        </details>
+                    </div>
                     <br>
                     <br>
-                    <span>Just audio:</span><br>
-                    <audio src="meeting_audio.m4a" controls>Just audio</audio>
-                    <details>
-                        <summary>
-                            Disclaimer
-                        </summary>
-                        The people featured in this video are not good at making these videos.
-                    </details>
+                    <div class="audio_layout">
+                        <span>Just audio:</span><br>
+                        <audio src="meeting_audio.m4a" controls>Just audio</audio>
+                    </div>
                 </section>
             </section>
         </main>
@@ -122,44 +165,51 @@
             </ul>
         </section>
         <hr>
-        <section>
-            <h3 id="section_title">Raffle Winner!</h3>
-            <div class="box">
-                <p>Professor Powell!</p>
-                <p>He won meeting minutes! Hooray!</p>
-            </div>
-            <i><p>Winners are not chosen randomly</p></i>
-        </section>
-        <hr>
-        <footer>
-            <form>
-                <fieldset>
-                    <input type="checkbox" id="check">
-                    <label for="check">Toggle</label><br>
-                    <br>
+        <footer class="footer_layout">
+            <div class="raffle">
+                <section id="raffle_box">
+                    <div>
+                        <h3>Raffle Winner!</h3>
+                    <div>
+                    <div class="box">
+                        <p>Professor Powell!</p>
+                        <p>He won meeting minutes! Hooray!</p>
+                    </div>
+                    <i><p>Winners are not chosen randomly</p></i>
+                </section>
+            <div>
+            <section class="form_layout">
+                <form>
                     <fieldset>
-                        <input type="radio" id="rad_1">
-                        <label for="rad_1">Option 1</label><br>
-                        <input type="radio" id="rad_2">
-                        <label for="rad_2">Option 2</label><br>
-                        <input type="radio" id="rad_3">
-                        <label for="rad_3">Option 3</label><br>
+                        <input type="checkbox" id="check">
+                        <label for="check">Toggle</label><br>
+                        <br>
+                        <fieldset>
+                            <input type="radio" id="rad_1">
+                            <label for="rad_1">Option 1</label><br>
+                            <input type="radio" id="rad_2">
+                            <label for="rad_2">Option 2</label><br>
+                            <input type="radio" id="rad_3">
+                            <label for="rad_3">Option 3</label><br>
+                        </fieldset>
+                        <br>
+                        <label for="txt">Enter Your Name</label>
+                        <input type="text" id="txt"><br>
+                        <label for="dte">Date</label>
+                        <input type="date" id="dte"><br>
+                        <label for="choices">Names Available</label>
+                        <select id="choices">
+                            <option>Parsia</option>
+                            <option>Taylor</option>
+                            <option>Della</option>
+                            <option>Olivia</option>
+                            <option>Ma</option>
+                        </select>
                     </fieldset>
                     <br>
-                    <label for="txt">Enter Your Name</label>
-                    <input type="text" id="txt"><br>
-                    <label for="dte">Date</label>
-                    <input type="date" id="dte"><br>
-                    <label for="choices">Names Available</label>
-                    <select id="choices">
-                        <option>Parsia</option>
-                        <option>Olivia</option>
-                        <option>Ma</option>
-                    </select>
-                </fieldset>
-                <br>
-                <input type="button" value="Submit">
-            </form>
+                    <input type="button" value="Submit">
+                </form>
+            </section>
         </footer>
     </body>
 </html>

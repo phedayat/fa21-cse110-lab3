@@ -2,7 +2,7 @@
     font-family: "Karla", sans-serif;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 500px) and (max-height: 800px) {
     .preamble > h2 {
         float: inline-start;
     }

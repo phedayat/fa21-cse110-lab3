@@ -21,8 +21,13 @@
 
 /* CSS for unordered lists */
 ul {
+    color: #023685;
     padding-top: 3em;
     padding-right: 3em;
     padding-bottom: 3em;
     padding-left: 3em;
+}
+
+details {
+    color: hsl(1, .5, .5);
 }

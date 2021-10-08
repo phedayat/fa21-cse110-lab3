@@ -35,3 +35,14 @@ ul {
 details {
     color: hsl(1, .5, .5);
 }
+
+.box {
+    display: flex;
+    fill: red;
+    justify-content: center;
+    border: dashed 1px black;
+}
+
+.box:hover {
+    fill: none;
+}

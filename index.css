@@ -1,9 +1,28 @@
-#main {}
+/* CSS for section titles */
+#section_title {
+    color: rgb(80, 120, 220);
+    background-color: saddlebrown;
+    text-decoration: silver;
+}
 
+/* CSS for videos in the minutes */
 .video {
     margin: 10px 10px 10px 10px;
     border-style: groove;
     border-color: aqua;
-    border-width: 2px;
-    border-radius: 2%;
+    border-width: 6px;
+    border-radius: .85%;
+}
+
+/* CSS for logic flow diagrams */
+.flow {
+    padding: 4vw 4vw 4vw 4vw;
+}
+
+/* CSS for unordered lists */
+ul {
+    padding-top: 3em;
+    padding-right: 3em;
+    padding-bottom: 3em;
+    padding-left: 3em;
 }

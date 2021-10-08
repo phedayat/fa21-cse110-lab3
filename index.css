@@ -7,7 +7,7 @@
 
 /* CSS for videos in the minutes */
 .video {
-    margin: 10px 10px 10px 10px;
+    margin: 1cm 1cm 1cm 1cm;
     border-style: groove;
     border-color: aqua;
     border-width: 6px;
@@ -17,6 +17,7 @@
 /* CSS for logic flow diagrams */
 .flow {
     padding: .5vw 4vw 4vw 4vw;
+    border: dashed 1ex deeppink;
 }
 
 section {
@@ -38,6 +39,7 @@ details {
 
 .box {
     display: flex;
+    color: forestgreen;
     fill: red;
     justify-content: center;
     border: dashed 1px black;

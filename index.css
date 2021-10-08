@@ -1,16 +1,56 @@
-.items {
+* {
+    font-family: "Karla", sans-serif;
+}
+
+@media screen and (max-width: 500px) {
+    .preamble > h2 {
+        float: inline-start;
+    }
+
+    section.items {
+        grid-column: 1;
+        background-color: snow;
+    }
+
+    section.items #section_title {
+        margin-top: 10vw;
+        margin-bottom: 10vw;
+        grid-row: span 4;
+    }
+}
+
+section.items {
     display: grid;
+    grid-template-columns: repeat(3, lfr);
+    gap: 5px;
+    grid-auto-rows: minmax(50px, auto);
+}
+
+section.items #section_title {
+    height: 100%;
+    max-width: 1500px;
+    max-height: 1500px;
 }
 
 /* CSS for section titles */
 #section_title {
+    grid-column-start: span 1;
+    grid-row: 2;
     margin: 10px;
-    color: rgb(80, 120, 220);
-    background-color: saddlebrown;
+    color: rgb(156, 237, 248);
+    background-color: rgb(224, 115, 37);
     text-decoration: wavy;
-    width: max-content;
+    width: auto;
     text-align: center;
     border: solid .2vw black;
+}
+
+p[id=special] {
+    color: maroon;
+}
+
+.comments {
+    display: inline-block;
 }
 
 /* CSS for videos in the minutes */
@@ -24,15 +64,16 @@
 
 /* CSS for logic flow diagrams */
 .flow {
+    display: block;
     padding: .45vw .45vw .45vw .45vw;
     border: dashed .3ex rgb(20, 102, 255);
 }
 
 section {
     display: flex;
-    justify-content: stretch;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-
 }
 
 /* CSS for unordered lists */
@@ -45,9 +86,15 @@ ul, ol {
     list-style-type: none;
 }
 
+li {
+   padding: 2px;
+   border: .1rem solid black;
+   margin: 10%;
+}
+
 details {
     word-wrap: break-word;
-    color: hsl(303, 100%, 51%);
+    color: hsl(61, 100%, 51%);
 }
 
 .box {
@@ -62,4 +109,33 @@ details {
 .box:hover {
     color: blue;
     background-color: white;
+}
+
+.preamble {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header > section {
+    float: left;
+    position: sticky;
+}
+
+header a:hover {
+    color: red;
+    font-weight: bolder;
+}
+
+.preamble section {
+    float: left;
+}
+
+.preamble section > h2 {
+    float: left;
+}
+
+.preamble section ul {
+    float: right;
 }
